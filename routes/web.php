@@ -16,3 +16,17 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/home' , function () {
+    return view('home');
+});
+
+Route::get('/profil' , function () {
+    return view('profil',[
+        "nama" => "Stefanus Vemas Aditya Mahardika",
+        "alamat" => "Condong Catur, Depok, Sleman",
+        "email" => "210711398@students.uajy.ac.id",
+        "telepon" => "08123456789",
+        "hobi" => "Makan"
+    ]);
+});

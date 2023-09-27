@@ -37,44 +37,35 @@
         </nav>
     </header>
 
-    <main>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{{asset('images/hotel1.jpg')}}" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Hotel</h5>
-                        <p>Modul 4 - Laravel MVC</p>
+    <main class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="{{asset('images/profil.jpg')}}" class="rounded-circle" style="width: 200px; aspect-ratio: 1/1; object-fit: cover;">
+                            </div>
+                            <div class="col">
+                                <h5 class="card-title"><?php echo $nama; ?></h5>
+                                <p class="card-text">Seorang mahasiswa informatika UAJY</p>
+                                <p class="card-text">
+                                <strong>Alamat:</strong> <?= $alamat;?>
+                                <br><strong>Email:</strong> <?= $email;?>
+                                <br><strong>Telepon:</strong> <?= $telepon;?>
+                                <br><strong>Hobi:</strong> <?= $hobi;?>
+                            
+                                </p>
+                                <a href="{{url('form')}}" class="btn btn-primary">Form Data Mahasiswa</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="{{asset('images/hotel2.jpg')}}" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Hotel</h5>
-                        <p>Modul 4 - Laravel MVC</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="{{asset('images/hotel3.jpg')}}" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Hotel</h5>
-                        <p>Modul 4 - Laravel MVC</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </main>
 
+            </div>
+        </div>
+        
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
-
-</html>
