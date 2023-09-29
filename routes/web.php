@@ -30,3 +30,13 @@ Route::get('/profil' , function () {
         "hobi" => "Makan"
     ]);
 });
+
+Route::get('/form' , function () {
+    return view('form',[
+        "nama" => "Stefanus Vemas Aditya Mahardika",
+        "npm" => "210711398",
+        "email" => "210711398@students.uajy.ac.id",
+        "fakultas" => "Fakultas Teknologi Industri",
+        "prodi" => "Informatika"
+    ]);
+});

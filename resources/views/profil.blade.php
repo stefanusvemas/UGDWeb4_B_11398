@@ -13,7 +13,7 @@
     <header>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">UGD4_B_11398</a>
+                <a class="navbar-brand" href="/">UGD4_B_11398</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -40,13 +40,13 @@
     <main class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-8">
-                <div class="card shadow-lg p-3 mb-5 bg-body rounded">
-                    <div class="card-body">
+                
+                    <div class="card-body shadow-lg p-3 mb-5 bg-body rounded">
                         <div class="row align-items-center">
-                            <div class="col-4">
+                            <div class="col-auto p-4">
                                 <img src="{{asset('images/profil.jpg')}}" class="rounded-circle" style="width: 200px; aspect-ratio: 1/1; object-fit: cover;">
                             </div>
-                            <div class="col">
+                            <div class="col p-4" style="border-left: 1px outset;">
                                 <h5 class="card-title"><?php echo $nama; ?></h5>
                                 <p class="card-text">Seorang mahasiswa informatika UAJY</p>
                                 <p class="card-text">
@@ -60,7 +60,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
 
             </div>
         </div>
