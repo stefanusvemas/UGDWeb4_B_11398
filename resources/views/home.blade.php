@@ -42,21 +42,21 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="{{asset('images/hotel1.jpg')}}" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5)">
                         <h5>Hotel</h5>
                         <p>Modul 4 - Laravel MVC</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="{{asset('images/hotel2.jpg')}}" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5)">
                         <h5>Hotel</h5>
                         <p>Modul 4 - Laravel MVC</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="{{asset('images/hotel3.jpg')}}" class="d-block w-100">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption d-none d-md-block" style="background: rgba(0, 0, 0, 0.5)">
                         <h5>Hotel</h5>
                         <p>Modul 4 - Laravel MVC</p>
                     </div>
